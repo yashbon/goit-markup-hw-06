@@ -377,12 +377,44 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="close-btn" data-modal-close>
-                <svg class="modal-icon">
-                    <use href="./images/icons.svg#close"></use>
-                </svg>
-            </button>
+            <div class="modal-container">
+                <button class="close-btn" data-modal-close>
+                    <svg class="close-modal-icon">
+                        <use href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                <form name="form-callback" action="">
 
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-name">Ім'я</label>
+                        <input class="form-field-input" type="text" id="user-name">
+                    </div>
+
+
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-tel">Телефон</label>
+                        <input class="form-field-input" type="text" id="user-tel">
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-email">Пошта</label>
+                        <input class="form-field-input" type="text" id="user-email">
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-comment">Коментар</label>
+                        <textarea class="form-field-comment" name="comment" id="user-comment" placeholder="Введіть текст"></textarea>
+                    </div>
+
+                    <div class="form-field check">
+                        <input class="form-field-input" type="checkbox" id="user-agreement">
+                        <label class="form-field-agreement" for="user-agreement">Погоджуюся з розсилкою та приймаю <a class="terms-agreement" href="#">Умови договору</a></label>
+                    </div>
+
+                    <button class="form-btn-submit" type="submit">Відправити</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>
